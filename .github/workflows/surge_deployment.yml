@@ -31,8 +31,8 @@ jobs:
     - name: Build React App
     
     - name: install surge
-      run: npm install --global surge
+      run: npm install -g surge
     
     - name: Deploy to Surge
-      run: surge ./build project-003.surge.sh ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build project-003.surge.sh --token ${{ secrets.SURGE_TOKEN }}
  
